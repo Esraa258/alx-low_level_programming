@@ -10,19 +10,21 @@
 
 int main(void)
 {
-int firstDigit = 0, seconDigit;
+int firstDigit = 0, secondDigit;
 
 while (firstDigit <= 99)
 {
-sconDigit = firstDigit;
-while (seconDigit <= 99)
+scondDigit = firstDigit;
+while (secondDigit <= 99)
 {
-if (seconDigit != firstDigit)
+if (secondDigit != firstDigit)
 {
 putchar((firstDigit / 10) + 48);
 putchar((firstDigit % 10) + 48);
-if (firstDigit != 98 || seconDigit != 99)
+if (firstDigit != 98 || secondDigit != 99)
 {
+putchar((secondDigit / 10) + 48);
+putchar((secondDigit % 10) + 48);
 putchar(',');
 putchar(' ');
 }
