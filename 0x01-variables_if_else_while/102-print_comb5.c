@@ -10,23 +10,23 @@
 
 int main(void)
 {
-int firstDigit = 0, secondDigit;
+int firstDigit = 0, seconDigit;
 while (firstDigit <= 99)
 {
-scondDigit = firstDigit;
-while (secondDigit <= 99)
+sconDigit = firstDigit;
+while (seconDigit <= 99)
 {
-if (secondDigit != firstDigit)
+if (seconDigit != firstDigit)
 {
 putchar((firstDigit / 10) + 48);
 putchar((firstDigit % 10) + 48);
-if (firstDigit != 98 || secondDigit != 99)
+if (firstDigit != 98 || seconDigit != 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
-secondDigit++;
+seconDigit++;
 }
 firstDigit++;
 }
