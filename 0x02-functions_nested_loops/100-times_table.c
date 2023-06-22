@@ -1,14 +1,16 @@
-#include"main.h"
+#include "main.h"
 
 /*
- * print_times_table - prints time table of n
+ * print_times_table - prints the n times table
  *
- * @n: takes number input
+ * @n: number times table (0 < n<= 15)
+ *
+ * Return: no return
  */
 
 void print_times_table(int n)
 {
-	int prod. mult. num;
+	int prod, mult, num;
 
 	if (n <= 15 && n >= 0)
 	{
@@ -39,3 +41,4 @@ void print_times_table(int n)
 		_putchar('\n');
 		}
 	}
+}
