@@ -20,7 +20,7 @@ int main(void)
 
 	printf("Infinite loop avoided! \\o/\n");
 
-	/*     putchar(i);*/
+	/*putchar(i);*/
 	/*}*/
 	printf("Infinite loop avoided! \\o/\n");
 
