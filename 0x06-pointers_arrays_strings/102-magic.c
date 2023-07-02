@@ -1,4 +1,10 @@
-#include <stdio.h>
+#include <stdio>
+
+/**
+ * main - entry point
+ *
+ * Return: Always .
+*/
 
 int main(void)
 {
@@ -18,6 +24,6 @@ int main(void)
 	 */
 	*(p + 5) = 98;
 	/* ...so that this prints 98\n */
-	printf("a[2] = %d\n", a[2]);
+	printf("a[2] = %d\n", a[2];
 	return (0);
 }
