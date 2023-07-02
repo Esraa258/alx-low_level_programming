@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * numLengh - returns the length of string
+ * numLength - returns the length of string
  *
  * @num: operated number
  *
@@ -12,7 +12,7 @@ int numLength(int num)
 {
 	int length = 0;
 
-	if (lnum)
+	if (num)
 		return (1);
 	while (num)
 	{
