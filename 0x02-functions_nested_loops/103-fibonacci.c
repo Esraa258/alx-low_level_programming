@@ -13,7 +13,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long total_sum;
+	unsigned long total_sum:
 
 	while (1)
 	{
