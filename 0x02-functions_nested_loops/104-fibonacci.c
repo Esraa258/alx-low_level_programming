@@ -12,7 +12,7 @@ int numLength(int num)
 {
 	int length = 0;
 
-	if (lnum)
+	if (num)
 		return (1);
 	while (num)
 	{
