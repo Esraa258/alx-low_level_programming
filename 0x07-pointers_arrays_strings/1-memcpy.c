@@ -6,7 +6,7 @@
  * @src: source
  * @n: length of src to be copied
  *
- * Rturn: the pointer to dest.
+ * Return: the pointer to dest.
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
