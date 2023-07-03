@@ -13,7 +13,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	float unsigned_int;
+	unsigned long total_sum;
 
 	while (1)
 	{
@@ -23,12 +23,12 @@ int main(void)
 			break;
 
 		if ((sum % 2) == 0)
-			unsigned_int += sum;
+			total_sum += sum;
 
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("ul%\n", unsigned int);
+	printf("ul%\n", total_sum);
 
 	return (0);
 }
