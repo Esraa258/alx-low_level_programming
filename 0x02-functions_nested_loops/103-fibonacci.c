@@ -13,7 +13,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	float total_sum;
+	float unsigned_int;
 
 	while (1)
 	{
@@ -23,7 +23,7 @@ int main(void)
 			break;
 
 		if ((sum % 2) == 0)
-			total_sum += sum;
+			unsigned_int += sum;
 
 		fib1 = fib2;
 		fib2 = sum;
