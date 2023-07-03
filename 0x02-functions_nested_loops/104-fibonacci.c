@@ -52,13 +52,13 @@ int main(void)
 
 		printf("%lu", f1);
 
-		sum = (f1 + f2) % max;
+		sum = (f1 + f2);
 		sumo = f1o + f2o + (f1 + f2) / max;
 		f1 = f2;
 		f1o = f2o;
 		f2 = sum;
 		f2o = sumo;
-		if (count != 98)
+		if (count != 97)
 			printf(", ");
 		else
 			printf("\n");
