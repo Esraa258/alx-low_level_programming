@@ -3,21 +3,23 @@
 
 /**
  * print_diagsums - print the sum of diagonals
- * @b: pointer to an array
+ * @p: pointer to an array
  * @size: size of the array
 */
 
-void print_diagsums(int *b, int size)
+void print_diagsums(int *p, int size)
 {
-	int itr, s1 = 0, s2 = 0
+	int a;
+	int b = 0;
+	int c = 0;
 
-	for (itr = 0; itr < size; itr++)
+	for (a = 0; a < size; a++)
 	{
-		s1 += b[itr];
-		s2 += b[size - itr - 1];
-		b += size;
+		b += p[a];
+		c += p[size - a - 1];
+		p += size;
 
 	}
-	printf("%d, ", s1);
-	printf("%d\n", s2);
+	printf("%d, ", b);
+	printf("%d\n", c);
 }
