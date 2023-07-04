@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - description
- * @b: 2nd array of int type.
- * @size: size of array (square)
+ * print_diagsums - print the sum of diagonals
+ * @b: pointer to an array
+ * @size: size of the array
 */
 
 void print_diagsums(int *b, int size)
@@ -18,6 +18,6 @@ void print_diagsums(int *b, int size)
 		b += size;
 
 	}
-	printf("%d' "' s1);
+	printf("%d' ", s1);
 	printf("%d\n", s2);
 }
