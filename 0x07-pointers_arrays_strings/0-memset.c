@@ -12,9 +12,9 @@ char *_memset(char *p, char c, unsigned int m)
 {
 	unsigned int a;
 
-	for (a = 0; m > 0; a++, m--)
+	for (a = 0; a < m; a++)
 	{
-		p[a] = c;
+		*(p + a) = c;
 	}
 
 	return (p);
