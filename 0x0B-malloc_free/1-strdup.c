@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	;
 
 	/*+1 on the size puts the end of string character*/
-	 |m = malloc(size * sizeof(*str) + 1);
+	 |m = malloc(size * sizeof(*str) + l);
 
 	if (m == 0)
 	{
