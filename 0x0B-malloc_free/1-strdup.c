@@ -9,26 +9,27 @@
 
 char *_strdup(char *str)
 {
-	int i = 0, size = 0;
-	char *m;
+	char *alloc_mem;
+	unsigned int i;
+	unsigned int length_of_string = 0;
 
 	if (str == NULL)
-		return (NULL);
+		return ('\0');
 
-	for (; str[size] != '\0'; size++)
-	;
+	while (*(str + length_of_string) != '\0')
+		length_of_string++;
 
-	/*+1 on the size puts the end of string character*/
-	 | m = malloc(size * sizeof(*str) + 1);
+	length_of_string++;
 
-	if (m == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		for (; i < size; i++)
-			m[i] = str[i];
-	}
-	return (m);
+	alloc_mem = malloc(sizeof(*str) * length_of_string);
+
+	if (alloc_mem == NULL)
+		return ('\0');
+
+	for (i = 0; i < length_of_string; i++)
+		alloc_mem[i] = *(str + i);
+
+	alloc_mem[i] = '\0';
+
+	return (alloc_mem);
 }
