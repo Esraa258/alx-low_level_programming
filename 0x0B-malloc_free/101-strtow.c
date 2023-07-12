@@ -1,21 +1,21 @@
 #include "main.h"
 
-int word_len(char *str);
-int count_words(char *str);
-char **strtow(char *str);
+int word_len(char *s);
+int count_words(char *s);
+char **strtow(char *s);
 
 /**
  * word_len - Locates the index marking the end of the
  *            first word contained within a string.
- * @str: The string to be searched.
+ * @s: The string to be searched.
  *
- * Return: i marking the end of the initial word pointed to by str.
+ * Return: i marking the end of the initial word pointed to by s.
  */
-int word_len(char *str)
+int word_len(char *s)
 {
 	int i = 0, len = 0;
 
-	while (*(str + i) && *(str + i) != ' ')
+	while (*(s + i) && *(s + i) != ' ')
 	{
 		len++;
 		i++;
@@ -42,7 +42,7 @@ int count_words(char *s)
 		if (*(s + i) != ' ')
 		{
 			words++;
-			i += word_len(str + i);
+			i += word_len(s + i);
 		}
 	}
 
