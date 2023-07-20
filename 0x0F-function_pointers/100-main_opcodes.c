@@ -7,7 +7,7 @@
  * @argc: the number of args
  * @argv: argument vector
  *
- * Return: Always 0
+ * Return: Always 0.
 */
 
 int main(int argc, char **argv)
@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	char *p = (char *)main;
 	int b;
 
-	if (argv != 2)
+	if (argc != 2)
 		printf("Error\n"), exit(1);
 	b = atoi(argv[1]);
 	if (b < 0)
